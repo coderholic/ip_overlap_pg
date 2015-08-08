@@ -1,0 +1,10 @@
+LOAD CSV
+    FROM 'net_combined.csv' (s, e, t1, t2)
+    INTO GETENV 'POSTGRES_URL' (s, e, t1, t2)
+
+    WITH truncate,
+        fields terminated by ','
+
+    BEFORE LOAD EXECUTE before.sql
+    AFTER LOAD EXECUTE after.sql
+;

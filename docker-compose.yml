@@ -1,0 +1,6 @@
+db:
+  image: postgres:9.4
+app:
+  build: .
+  links:
+    - db
