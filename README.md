@@ -18,8 +18,8 @@ $ wget https://s3.amazonaws.com/idb.io/net_combined.csv
 
 Then use one of the following ways:
 
-1. Docker containers
-2. Local environment
+1. [Docker containers](#docker-containers)
+2. [Local environment](#local-environment)
 
 ## Docker containers
 
